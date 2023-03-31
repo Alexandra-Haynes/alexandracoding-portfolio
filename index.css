@@ -1,91 +1,67 @@
-.home-main-section {
+
+
+.introduction-container {
 
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    /* height: 80vh; */
-    margin: auto;
-    width: 100%;
-    position: relative;
-
-
+    align-items: center;
+   
+    
+    height: 60vh;
+    width: 80vw;
+   position: relative;
+   margin:  0 auto;
+margin-top: 10rem;
+    /* background-color: rgb(111, 107, 107); */
+    /* box-shadow: 10px 40px 20px rgba(0,0,0,0.5); */
+   
 }
 
-.home-main-section .avatar {
+.flex-item {
+    flex-grow: 1;
+    flex-basis:1;
+    flex-shrink: 1;
+    
+    
+}
+ .avatar {
+    
     background-image: url('avatar.png');
-    position: relative;
-    z-index: 2;
-    min-width: 50%;
-    background-size: contain;
+    background-position: center;
+    background-size:contain;
     background-repeat: no-repeat;
-
-
-
+    min-width: 40vw;
+    min-height: 60vh;
+    max-height: 80vh;
+   
+    /* border: 1px solid white; */
 }
 
-.introduction {
-    align-self: center;
+
+
+.introduction-text {
+   /* border: 1px solid orange; */
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: center;
-    height: 70vh;
-
+    align-items: flex-start;
+    padding-left: 3rem;
+    
+   
 }
 
-.introduction .call-to-action {
+.introduction-text .call-to-action {
     margin: 2rem 0;
 
 }
 
-.introduction .subtitle {
+.introduction-text .subtitle {
     letter-spacing: 1px;
     line-height: 25px;
     opacity: .8;
 
 }
 
-.introduction .icon {
-    margin-top: 3rem;
-}
+
 
 /* ________________experiment */
-/* .linkedin-icon {
-    width: 80px;
-}
-.github-icon {
-    width: 80px;
-    position: absolute;
-    
-    animation: iconsAnimation 6s ease-in-out ;
-}
-
-
-
-@keyframes iconsAnimation {
-    0% {
-        transform:  translateX(600px) rotate(0deg);
-       
-    }
-
-    25% {
-        transform:  translateX(200px) rotate(-90deg);
-       
-    }
-
-    50% {
-        transform:  translateX(100px) rotate(-180deg);
-       
-    }
-
-
-
-890%{transform: translateX(-30px) rotate(-240deg);
-
-}
-
-100% {transform:  translateX(0) rotate(-360deg);
-
-}
-} */
