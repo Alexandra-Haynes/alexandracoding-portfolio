@@ -24,14 +24,8 @@ body {
     color: var(--font-color);
     min-height: 100vh;
 }
-.container {
-    max-width: 90%;
-    margin: 0 auto;
-}
-.full-height-container {
-    display: flex;
-    flex-direction: column;
-}
+
+
 
 .logo {
     position: relative;
@@ -96,24 +90,24 @@ body {
 
 
 .title {
+    /* I am */
     font-family: var(--accent-font-family);
     color: var(--font-color);
-    font-size: 4rem;
-    
+    font-size: clamp(1rem, 2.5vw,3rem);
 }
 
 #text-highlight {
+    /* Alexandra Haynes */
     color: var(--accent-color);
     font-family: var(--accent-font-family);
-    font-size: 3rem;
     letter-spacing: 2px;
-   
+    font-size: clamp(2rem, 4vw, 4rem);
    
 }
 .subtitle {
     font-family: var(--regular-font-family);
     color: inherit;
-    font-size: 1.2em;
+    font-size: clamp(.5em, 2vw, .8em);
     font-weight: lighter;
     margin-top: 3rem;
    
@@ -132,7 +126,7 @@ hr{
     text-align: center;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: clamp(.5em, 2vw, 1.2em);
     
 }
 
